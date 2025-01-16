@@ -12,11 +12,6 @@ const Header = () => {
     <header className="sticky flex top-0 z-50 border-b p-4 backdrop-blur bg-background/95 supports-[backdrop-filter]:bg-background/60 ">
       <div className="container flex mx-auto h-16 items-center justify-between lg:px-8 px-2">
         <Link to={"/"} className="flex justify-center items-center">
-          <img
-            src={isDark ? "/night.png" : "/day.png"}
-            alt="day"
-            className="h-14"
-          />
           <h1 className="font-bold text-xl m-2">Weather Forecast</h1>
         </Link>
         <div className="flex gap-4">
