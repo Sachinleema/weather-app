@@ -53,7 +53,7 @@ const WeatherForecast = ({ data }: weatherForecastProps) => {
             return (
               <div
                 key={day.date}
-                className="grid grid-cols-3 items-center gap-4 rounded-lg border p-4"
+                className="grid grid-cols-2 md:grid-cols-3 items-center gap-4 rounded-lg border p-4"
               >
                 <div>
                   <p className="font-medium">
@@ -63,7 +63,7 @@ const WeatherForecast = ({ data }: weatherForecastProps) => {
                     {day.weather.description}
                   </p>
                 </div>
-                <div className="flex justify-center gap-4 ">
+                <div className="hidden md:flex justify-center gap-4 ">
                   <span className="flex items-center text-blue-500">
                     <ArrowDown className="mr-1 h-4 w-4" />
                     {formatTemp(day.temp_min - 273.14)}
